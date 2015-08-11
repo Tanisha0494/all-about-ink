@@ -1,0 +1,757 @@
+/*
+Theme Name: All About Ink 
+Theme URI: http://tanisharosemedia.com
+Description: A theme for my portfolio.
+Author: Tanisha Rose
+Author URI: http://tanisharosemedia.com
+Version: 1.0
+License: GPLv2 
+License URI: license.txt
+Tags:gray, two-columns
+
+*/
+
+
+/* 
+== FLEX-BOX 
+*/
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* 
+  == Micro Clearfix 
+  http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    *zoom:1;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+
+ /*==@Font-Face*/
+
+ @font-face {
+    font-family: 'texgyreadventorregular';
+    src: url('styles/texgyreadventor-regular-webfont.eot');
+    src: url('styles/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('styles/texgyreadventor-regular-webfont.woff') format('woff'),
+         url('styles/texgyreadventor-regular-webfont.ttf') format('truetype'),
+         url('styles/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'texgyreadventorbold';
+    src: url('styles/texgyreadventor-bold-webfont.eot');
+    src: url('styles/texgyreadventor-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('styles/texgyreadventor-bold-webfont.woff') format('woff'),
+         url('styles/texgyreadventor-bold-webfont.ttf') format('truetype'),
+         url('styles/texgyreadventor-bold-webfont.svg#texgyreadventorbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'nexa_rust_sansblack';
+    src: url('styles/NexaRustSans-Black-Free-webfont.eot');
+    src: url('styles/NexaRustSans-Black-Free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('styles/NexaRustSans-Black-Free-webfont.woff2') format('woff2'),
+         url('styles/NexaRustSans-Black-Free-webfont.woff') format('woff'),
+         url('styles/NexaRustSans-Black-Free-webfont.ttf') format('truetype'),
+         url('styles/NexaRustSans-Black-Free-webfont.svg#nexa_rust_sansblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*
+== Cascading Styles
+*/
+
+
+html{
+  background:url(images/concrete_seamless.png);
+}
+
+body{
+  width:100%;
+  font-size:1.35rem;
+  line-height:2.05em;
+  padding:.75rem;
+
+  font-family: 'texgyreadventorregular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hide{
+  display:none;
+}
+
+
+.hentry * {
+  max-width:100%;
+  height:auto;
+}
+
+
+
+h1.logo{
+  padding:.25rem;
+}
+
+h1.logo a{
+  display:block;
+  height:210px;
+  width:241px;
+  margin:0 auto;
+}
+
+h1.logo a img{
+  max-width:100%;
+  display: block;
+}
+
+h1,h2, main h2 a{
+  font-family:'nexa_rust_sansblack';
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h3,h4,h5,h6{
+  font-family: 'texgyreadventorbold';
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+  font-size:2rem;
+  color:#333;
+  margin-bottom:1rem;
+}
+
+h2, main h2 a{
+  font-size:1.5rem;
+  color:#666;
+  margin:1rem;
+}
+
+h3,h4,h5,h6{
+  font-size:1.25rem;
+  margin:.75rem;
+  color:#999;
+
+}
+
+section.widget h2{
+  color:#FFF;
+}
+
+
+/*
+== Header Styles
+*/
+
+
+/*==NAVIGATION STYLES*/
+
+
+nav.gnav, nav.fnav{
+  background:#19191A;
+  padding:.5rem;
+}
+
+nav.gnav{
+  margin-bottom:1rem;
+}
+
+nav.gnav ul li a,
+nav.fnav ul li a{
+  color:#FFF;
+  text-decoration:none;
+  display:block;
+  padding:.45rem;
+  text-align: center;
+  font-family:'nexa_rust_sansblack';
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav.gnav ul li a:hover,
+nav.fnav ul li a:hover{
+  border-bottom: 12px solid #FFF;
+}
+
+nav.gnav ul li.current-menu-item a,
+nav.fnav ul li.current-menu-item a{
+  border-bottom: 12px solid #FFF;
+}
+
+
+/*==MAIN STYLES*/
+
+
+main{
+  margin:1rem 0;
+}
+
+main a{
+  font-family: 'texgyreadventorbold';
+  font-weight: normal;
+  font-style: normal;
+  color:#771C14;
+  text-decoration:none;
+}
+
+main a:hover,
+main a:focus{
+  text-decoration:underline;
+}
+
+
+.hentry .entry-content ul{
+  padding-left:1rem;
+  list-style-type:disc;
+}
+
+p{
+  margin:.75rem;
+}
+
+.widget{
+  color:#FFF;
+  background:rgba(51,51,51,.5);
+  padding:.25rem;
+}
+
+.archive .widget{
+  padding:.5rem;
+  margin-top:.5rem;
+}
+
+.archive .widget h1{
+  text-align:center;
+}
+
+.alignleft, .thumb{
+    float:left;
+
+}
+
+.alignright{
+    float:right;
+
+}
+
+.aligncenter{
+  text-align:center;
+}
+
+.thumb{
+  margin:1em .75em;
+}
+
+.hentry img{
+  padding: 0 .5em;
+}
+
+.gallery{
+  padding:1rem;
+}
+
+.gallery img{
+  margin:0;
+}
+
+.format-gallery, .format-image, .gallery{
+  
+}
+
+.format-video{
+  
+}
+
+.format-quote{
+  position:relative;
+  width:auto;
+  quotes: "“" "”" "‘" "’";
+}
+
+.format-quote:before {
+    content: open-quote;
+    position:absolute;
+    font-size:6em;
+    margin:0;
+    padding:0;
+    top:.65rem;
+    left:-0.7rem;
+    color:;
+}
+
+.format-quote h2, .format-quote .postmeta{
+  display:none;
+}
+
+
+ol{
+  margin:1rem 0;
+}
+
+ol li{
+  margin:.75rem 0;
+}
+
+.home h1 a img,
+.home p a img{
+  margin:0 auto;
+  display:block;
+}
+
+.single figure{
+  padding:0;
+}
+
+.single figure h3{
+  background-color:#222;
+  color:#FFF;
+  padding:.5rem;
+  margin-left:0;
+  margin-right:0;
+}
+
+.single figure figcaption{
+  background:rgba(51,51,51,.5);
+  color:#FFF;
+  display:block;
+}
+
+figcaption h4{
+  color:#FFF;
+}
+
+.single figure figcaption ul{
+  list-style-position: inside;
+  padding:.25rem;
+}
+
+.single figure figcaption ul li{
+  margin:.35rem;
+}
+
+.single section.pagination a{
+  display:block;
+  width:100%;
+  text-align:center;
+  margin:.25rem;
+  padding:.25rem;
+}
+
+.archive main{
+  position:relative;
+}
+
+.archive main > a{
+  display:block;
+  color:#000;
+}
+
+.archive main figure{
+  margin:1.75rem;
+  position:relative;
+}
+
+.archive main figure > a{
+  display:block;
+}
+
+.archive main figcaption{
+  padding:0 .55rem;
+}
+
+.archive main figure img.ink{
+  display:block;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.archive figure h2{
+  text-align:center;
+}
+
+.archive main figure figcaption, .archive main figure figcaption > a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.archive main a figure.effect-steve h2,
+.archive main a figure.effect-steve article {
+  background: #fff;
+  color: #771C14;
+}
+
+
+/*==POSTMETA STYLES*/
+
+
+article.postmeta{
+	background:rgba(153,153,153,.25);
+	padding:5px;
+  margin:0 auto;
+  width:50%;
+}
+
+article.postmeta a{
+  text-decoration:none;
+}
+
+article.postmeta a:hover,
+article.postmeta a:focus{
+  text-decoration:underline;
+}
+
+article span{
+	font-size:1rem;
+	/*color:#FFF;*/
+	margin:10px;
+	display:block;
+  text-align:center;
+
+}
+
+
+/*==ASIDE STYLES*/
+
+
+
+/*==COMMENTS STYLES*/
+
+
+
+/*==FOOTER STYLES*/
+
+
+
+/*==FORM STYLES*/
+
+
+form#searchform label{
+  display:none;
+}
+
+form#searchform input{
+  border: none;
+  font-size:1.25rem;
+  padding:.5rem;
+}
+
+form#searchform input#s{
+  width:70%;
+  background-color: rgba(204,204,204,.5);
+  color:#333;
+}
+
+form#searchform input[value="Search"]{
+  width:25%;
+  background-color:#333;
+  color:#FFF;
+  font-family: 'texgyreadventorregular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+form#searchform input[value="Search"]:hover,
+form#searchform input[value="Search"]:focus{
+  background-color:#111;
+}
+
+
+/*==BREAKPOINT STYLES*/
+
+
+@media only screen and (min-width:550px){
+
+}
+
+@media only screen and (min-width:750px){
+  
+  .archive main > a{
+    float:left;
+    width:43%;
+  }
+
+  .archive figure{
+    
+    float:left;
+    margin:.5rem;
+    padding:0;
+  }
+}
+
+@media only screen and (min-width:950px){
+
+    header{
+      clear:both;
+    }
+
+  header h1.logo{
+    width:25%;
+    margin:0 auto;
+  }
+
+  nav.gnav ul li {
+    width:16%;
+    float:left;
+    margin:.75rem;
+  }
+
+  nav.gnav ul li a{
+    float:left;
+  }
+
+  .archive main > a{
+      width:28%;
+  }
+
+  .archive figure{
+    margin:.5rem;
+    padding:0;
+  }
+
+  nav.fnav ul li{
+    width:15%;
+    float:left;
+    margin:.15rem;
+  }
+
+}
+
+
+@media only screen and (min-width:1200px){  
+  
+  body{
+    line-height:2rem;
+  }
+
+  header{
+    clear:both;
+  }
+
+  header h1.logo{
+    width:20%;
+    float:left; 
+    padding:0;
+    margin:0;
+  }
+
+  header h1.logo a{
+    padding:0;
+  }
+
+  .archive main > a{
+    width:20%;
+  }
+
+  .archive figure{
+    
+    margin:.5rem;
+    padding:0;
+  }
+
+  /*==-----------------*/
+  /***** Steve *****/
+  /*-----------------*/
+
+  .archive main a figure.effect-steve {
+    z-index: auto;
+    overflow: visible;
+    background: #000;
+  }
+
+  .archive main a figure.effect-steve:before,
+  .archive main a figure.effect-steve h2:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: '';
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+  }
+
+  a figure.effect-steve:before {
+    box-shadow: 0 3px 30px rgba(0,0,0,0.8);
+    opacity: 0;
+  }
+
+  .archive main a figure.effect-steve figcaption {
+    z-index: 1;
+  }
+
+  .archive main a figure.effect-steve img {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: perspective(1000px) translate3d(0,0,0);
+    transform: perspective(1000px) translate3d(0,0,0);
+  }
+
+
+
+  .archive main a figure.effect-steve h2 {
+    position: relative;
+    margin-top: .75em;
+    padding: 0.25em;
+  }
+
+  .archive main a figure.effect-steve h2:before {
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+  }
+
+  .archive main a figure.effect-steve article {
+    margin-top: 1em;
+    padding: 0.5em;
+    font-weight: 800;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(0.9,0.9,1);
+    transform: scale3d(0.9,0.9,1);
+  }
+
+  .archive main a figure.effect-steve:hover:before {
+    opacity: 1;
+  }
+
+  .archive main a figure.effect-steve:hover a img {
+    -webkit-transform: perspective(1000px) translate3d(0,0,21px);
+    transform: perspective(1000px) translate3d(0,0,21px);
+  }
+
+  .archive main a figure.effect-steve:hover h2:before {
+    opacity: 0;
+  }
+
+  .archive main a figure.effect-steve:hover article {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
+
+  /*end STEVE*/
+
+
+  /*==Navigation styles*/
+
+
+  main nav a{
+    text-align: center;
+    width:80%;
+  }
+
+  nav.gnav{
+    width:80%;
+    float:right;
+    margin-top:2.5rem;
+  }
+
+  nav.gnav ul li{
+    width:15%;
+    display:block;
+  }
+
+   nav.fnav ul li {
+    width:10%;
+   }
+
+   /*==MAIN STYLES*/
+
+  .home main{
+    width:75%;
+    float:right;
+  }
+
+  .home .haside{
+    width:23%;
+    float:left;
+    margin-right:.75rem;
+  }
+
+  .home footer{
+    clear:both;
+  }
+
+  .single img.ink{
+    width:50%;
+    float:left;
+  }
+
+  .single section.post{
+    width:45%;
+    float:right;
+  }
+
+  .single section.pagination{
+    clear:both;
+  }
+
+  .single section.pagination a{
+    width:25%;
+  }
+
+  .single section.pagination a[rel='prev']{
+    float:right;
+  }
+
+  .single section.pagination a[rel="next"]{
+    float:left;
+  }
+
+  /*==FORM STYLES*/
+
+  form#searchform{
+    width:25%;
+    float:right;
+  }
+
+
+}
+
